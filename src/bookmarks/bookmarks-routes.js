@@ -2,7 +2,7 @@ const express = require("express");
 const bookRouter = express.Router();
 const { bookmarks } = require("../store");
 const bodyParser = express.json();
-const uuid = require("uuid/v4");
+const { v4: uuid } = require("uuid/v4");
 
 bookRouter.use(express.json());
 
